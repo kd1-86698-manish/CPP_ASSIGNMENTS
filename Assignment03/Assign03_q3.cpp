@@ -58,19 +58,18 @@ public:
     }
     void acceptAddress()
     {
-        cout << "Enter Buliding Name :" << endl;
         getchar();
+
+        cout << "Enter Buliding Name :";
         getline(cin, this->buliding);
 
-        cout << "Enter Street Name :" << endl;
-        getchar();
+        cout << "Enter Street Name :";
         getline(cin, this->street);
 
-        cout << "Enter City :" << endl;
-        getchar();
+        cout << "Enter City :";
         getline(cin, this->city);
 
-        cout << "Enter Pin :" << endl;
+        cout << "Enter Pin :";
         cin >> this->pin;
     }
 
