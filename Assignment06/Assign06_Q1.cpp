@@ -54,7 +54,6 @@ public:
     {
         this->name = "";
         this->address = "";
-        Date dob;
     }
     Person(string name, string address, int day, int month, int year)
     {
@@ -97,7 +96,6 @@ public:
         this->id = 0;
         this->dept = "";
         this->sal = 0;
-        Date doj;
     }
     Employee(int id, string dept, int sal, int day, int month, int year)
     {
@@ -110,6 +108,8 @@ public:
     }
     void aceeptEmployee()
     {
+        this->acceptPerson();
+
         cout << "Enter ID         : ";
         cin >> id;
 
@@ -125,6 +125,8 @@ public:
 
     void displayEmployee()
     {
+        
+        this->displayPerson();
         cout << "ID           : " << id << endl;
         cout << "Department   : " << dept << endl;
         cout << "Salary       : " << sal << endl;
@@ -160,13 +162,11 @@ int main()
         {
         case 1:
         {
-            e1.acceptPerson();
             e1.aceeptEmployee();
         }
         break;
         case 2:
         {
-            e1.displayPerson();
             e1.displayEmployee();
         }
         break;
